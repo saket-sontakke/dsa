@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node index.js",
-    "build": "npx parcel build src/index.js --dist-dir public",
+    "build": "./node_modules/.parcel/bin/parcel.js build src/index.js --dist-dir public",
     "dev": "concurrently \"nodemon index.js\" \"parcel watch src/index.js --dist-dir public\""
   },
   "dependencies": {
